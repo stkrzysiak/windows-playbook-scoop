@@ -1,2 +1,11 @@
 [win]
-127.0.0.1  ansible_connection=ssh ansible_shell_type=cmd ansible_user=Vagrant ansible_password=vagrant
+172.21.240.1  ansible_connection=ssh ansible_shell_type=cmd ansible_user=stk ansible_password=demo
+
+; [win]
+; 172.21.240.1
+
+; [win:vars]
+; ansible_user=stk
+; ansible_password=demo
+; ansible_connection=winrm
+; ansible_winrm_server_cert_validation=ignore

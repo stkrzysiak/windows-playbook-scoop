@@ -3,7 +3,7 @@
   hosts: all
 
   vars_files:
-    - default.config.yml
+    - stk.config.yml
 
   pre_tasks:
     - name: Include playbook user configuration.

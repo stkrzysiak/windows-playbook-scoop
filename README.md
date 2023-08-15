@@ -65,7 +65,7 @@ This playbook installs and configures most of the software I use on my Windows 1
 
 ### Prepare your Windows host ⏲
 
-#### **This playbook was tested on Windows 10 2004 and Windows 11 21H2 (Pro, Ent). Other versions may work but have not tried.**
+#### **This playbook was tested on Windows 10 22H2. Other versions may work but have not tried.**
 
 Copy and paste the code below into your PowerShell terminal to get your Windows machine ready to work with Ansible.
 
@@ -76,7 +76,15 @@ $file = "$env:temp\setup.ps1"
 
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 powershell.exe -ExecutionPolicy ByPass -File $file -Verbose
-```
+
+
+#### Possible todos
+
+- Install WSL
+- Install python3.x
+- Install galaxy
+- Copy default.config.yml to config.yml
+
 
 ### Ansible Control node 🕹
 

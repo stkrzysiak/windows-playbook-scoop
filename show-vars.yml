@@ -1,0 +1,9 @@
+---
+- name: Show all variables
+  hosts: all
+  vars_files:
+    - stk.config.yml
+  tasks:
+    - name: Display all variables/facts known for a host
+      debug:
+        var: hostvars['localhost']
